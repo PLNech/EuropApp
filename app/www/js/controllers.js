@@ -1,4 +1,4 @@
-angular.module('starter.controllers', [])
+angular.module('europapp.controllers', [])
 
 .controller('DashCtrl', function($scope) {})
 
