@@ -21,18 +21,18 @@ angular.module('europapp', ['ionic', 'europapp.controllers', 'europapp.services'
   $stateProvider
   // setup an abstract state for the tabs directive
     .state('tab', {
-    url: '/tab',
+    url: '/app',
     abstract: true,
     templateUrl: 'templates/tabs.html'
   })
 
   // Each tab has its own nav history stack:
-  .state('tab.dash', {
-    url: '/dash',
+  .state('tab.home', {
+    url: '/home',
     views: {
-      'tab-dash': {
-        templateUrl: 'templates/tab-dash.html',
-        controller: 'DashCtrl'
+      'tab-home': {
+        templateUrl: 'templates/tab-home.html',
+        controller: 'HomeCtrl'
       }
     }
   })
@@ -67,6 +67,6 @@ angular.module('europapp', ['ionic', 'europapp.controllers', 'europapp.services'
   });
 
   // if none of the above states are matched, use this as the fallback
-  $urlRouterProvider.otherwise('/tab/dash');
+  $urlRouterProvider.otherwise('/app/home');
 
 });
