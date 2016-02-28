@@ -1,26 +1,19 @@
-<!--
-Create tabs with an icon and label, using the tabs-positive style.
-Each tab's child <ion-nav-view> directive will have its own
-navigation history that also transitions its views in and out.
--->
 <ion-tabs class="tabs-icon-top tabs-color-active-positive">
 
     <ion-tab title="Home" icon-off="ion-ios-home-outline" icon-on="ion-ios-home" ui-sref="tab.home">
         <ion-nav-view name="tab-home"></ion-nav-view>
     </ion-tab>
-<!--
 
     <ion-tab title="Map" icon-off="ion-ios-location-outline" icon-on="ion-ios-location" ui-sref="tab.map">
-        <ion-nav-view name="tab-chats"></ion-nav-view>
-    </ion-tab>
--->
-
-    <ion-tab title="Chats" icon-off="ion-ios-chatboxes-outline" icon-on="ion-ios-chatboxes" ui-sref="tab.chats">
-        <ion-nav-view name="tab-chats"></ion-nav-view>
+        <ion-nav-view name="tab-map"></ion-nav-view>
     </ion-tab>
 
-    <ion-tab title="Account" icon-off="ion-ios-gear-outline" icon-on="ion-ios-gear" ui-sref="tab.account">
-        <ion-nav-view name="tab-account"></ion-nav-view>
+    <ion-tab title="Events" icon-off="ion-ios-people-outline" icon-on="ion-ios-people" ui-sref="tab.events">
+        <ion-nav-view name="tab-events"></ion-nav-view>
+    </ion-tab>
+
+    <ion-tab title="Around me" icon-off="ion-ios-flower-outline" icon-on="ion-ios-flower" ui-sref="tab.around">
+        <ion-nav-view name="tab-around"></ion-nav-view>
     </ion-tab>
 
 
