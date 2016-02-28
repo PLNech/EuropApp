@@ -21,3 +21,35 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
 // Include all of Ionic
 @import "www/lib/ionic/scss/ionic";
 
+.list-events {
+  .event-title {
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .event-place {
+    margin: 0 5px;
+    font-size: 12px;
+    font-weight: bold;
+    color: darkgray;
+    float: right;
+  }
+
+  .event-duration {
+    font-size: 10px;
+    font-style: italic;
+    color: gray;
+    float: right;
+  }
+
+  .event-speaker {
+    font-size: 15px;
+    color: gray;
+  }
+}
+
+.event-detail {
+  i {
+    margin: 0 5px 0 0;
+  }
+}
