@@ -16,8 +16,8 @@ angular.module('europapp.controllers', [])
         //});
 
         $scope.events = Events.all();
-        $scope.remove = function(event) {
-            Events.remove(event);
+        $scope.share = function(event) {
+            //TODO: Share feature
         };
     })
 
