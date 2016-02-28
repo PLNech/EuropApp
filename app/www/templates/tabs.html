@@ -1,18 +1,26 @@
 <ion-tabs class="tabs-icon-top tabs-color-active-positive">
 
-    <ion-tab title="Home" icon-off="ion-ios-home-outline" icon-on="ion-ios-home" ui-sref="tab.home">
+    <ion-tab title="Home" ui-sref="tab.home"
+             icon-off="{{ platform == 'android' ? 'ion-android-home' : 'ion-ios-home-outline'}}"
+             icon-on="{{ platform == 'android' ? 'ion-android-home' : 'ion-ios-home'}}">
         <ion-nav-view name="tab-home"></ion-nav-view>
     </ion-tab>
 
-    <ion-tab title="Map" icon-off="ion-ios-location-outline" icon-on="ion-ios-location" ui-sref="tab.map">
+    <ion-tab title="Map" ui-sref="tab.map"
+             icon-off="{{ platform == 'android' ? 'ion-android-pin' : 'ion-ios-location-outline'}}"
+             icon-on="{{ platform == 'android' ? 'ion-android-pin' : 'ion-ios-location'}}">
         <ion-nav-view name="tab-map"></ion-nav-view>
     </ion-tab>
 
-    <ion-tab title="Events" icon-off="ion-ios-people-outline" icon-on="ion-ios-people" ui-sref="tab.events">
+    <ion-tab title="Events" ui-sref="tab.events"
+             icon-off="{{ platform == 'android' ? 'ion-android-contacts' : 'ion-ios-people-outline'}}"
+             icon-on="{{ platform == 'android' ? 'ion-android-contacts' : 'ion-ios-people'}}">
         <ion-nav-view name="tab-events"></ion-nav-view>
     </ion-tab>
 
-    <ion-tab title="Around me" icon-off="ion-ios-flower-outline" icon-on="ion-ios-flower" ui-sref="tab.around">
+    <ion-tab title="Around me" ui-sref="tab.around"
+             icon-off="{{ platform == 'android' ? 'ion-android-locate' : 'ion-ios-flower-outline'}}"
+             icon-on="{{ platform == 'android' ? 'ion-android-locate' : 'ion-ios-flower'}}">>
         <ion-nav-view name="tab-around"></ion-nav-view>
     </ion-tab>
 

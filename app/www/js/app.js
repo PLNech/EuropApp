@@ -15,7 +15,9 @@ angular.module('europapp', ['ionic', 'europapp.controllers', 'europapp.services'
             }
         });
     })
-
+    .run(function($rootScope) {
+        $rootScope.platform = ionic.Platform.platform();
+    })
     .config(function($stateProvider, $urlRouterProvider) {
 
         $stateProvider

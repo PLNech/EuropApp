@@ -1,5 +1,4 @@
 angular.module('europapp.controllers', [])
-
     .controller('HomeCtrl', function($scope) {
     })
 
