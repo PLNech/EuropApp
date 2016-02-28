@@ -1,0 +1,24 @@
+# Packages
+node_modules/
+bower_components/
+
+# Temporary files
+*.tmp
+*.sass-cache
+*.swp
+*.swo
+*.log
+
+# OS Files
+*.DS_Store
+
+# IDE Files
+*.iml
+.idea/
+
+# Ionic generated files
+platforms
+plugins
+
+# Non-code project files
+mockups/
