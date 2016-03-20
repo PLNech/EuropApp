@@ -9,6 +9,10 @@ bower_components/
 *.swo
 *.log
 
+# Generated files
+build/
+*.apk
+
 # OS Files
 *.DS_Store
 

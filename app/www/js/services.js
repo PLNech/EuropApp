@@ -55,4 +55,92 @@ angular.module('europapp.services', [])
                 return null;
             }
         };
+    })
+    .factory('Around', function() {
+        /**
+         * EAT/DRINK/CULTURE/FUN-TOURISM/TRANSPORTATION
+         * Name/Photo/Description/Address/Phone/Website
+         *
+         * @type {*[]}
+         */
+        var around = [{
+            name: "Eat", items: [
+                {
+                    id: 1,
+                    img: "img/around/tea.png",
+                    name: "Sesame et sel",
+                    description: "Korean restaurant.",
+                    address: "123 rue des Poireaux",
+                    phone: "023123123",
+                    website: "sesameetsel.com"
+                },
+                {
+                    id: 2,
+                    img: "img/around/cafet.png",
+                    name: "La Cafet",
+                    description: "School Cafeteria.",
+                    address: "Cour Pasteur",
+                    phone: "023123123",
+                    website: "cafecrocus.fr"
+                }
+            ]
+        },
+            {
+                name: "Drink", items: [
+                {
+                    id: 1,
+                    img: "img/around/tea.png",
+                    name: "Salon de thé",
+                    description: "Tea and scones near the venue.",
+                    address: "25 Rue des Fleurs",
+                    phone: "023123123",
+                    website: "http://teaplace.fr"
+                },
+                {
+                    id: 2,
+                    img: "img/around/disk.png",
+                    name: "La Diskotek",
+                    description: "Drink and meet other drunk people.",
+                    address: "321 Place rouge",
+                    phone: "023123123",
+                    website: "disko.com"
+                }
+            ]
+            },
+            {
+                name: "Culture", items: []
+            },
+            {
+                name: "Fun/Tourism", items: [
+                {
+                    id: 2,
+                    img: "img/around/disk.png",
+                    name: "La Diskotek",
+                    description: "Drink and meet other drunk people.",
+                    address: "321 Place rouge",
+                    phone: "023123123",
+                    website: "disko.com"
+                }
+            ]
+            },
+            {
+                name: "Transportation", items: []
+            }];
+
+        return {
+            all: function() {
+                return around;
+            },
+            remove: function(around) {
+                around.splice(around.indexOf(around), 1);
+            },
+            get: function(aroundId) {
+                for (var i = 0; i < around.length; i++) {
+                    if (around[i].id === parseInt(aroundId)) {
+                        return around[i];
+                    }
+                }
+                return null;
+            }
+        };
     });

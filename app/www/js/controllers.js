@@ -19,13 +19,13 @@ angular.module('europapp.controllers', [])
             //TODO: Share feature
         };
     })
-
     .controller('EventDetailCtrl', function($scope, $stateParams, Events) {
         $scope.event = Events.get($stateParams.eventId);
     })
 
-    .controller('AroundCtrl', function($scope) {
-        $scope.settings = {
-            enableFriends: true
-        };
+    .controller('AroundDetailCtrl', function($scope, $stateParams, Around) {
+        $scope.around = Around.get($stateParams.eventId);
+    })
+    .controller('AroundCtrl', function($scope, Around) {
+        $scope.around = Around.all();
     });

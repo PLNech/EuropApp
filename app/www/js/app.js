@@ -71,6 +71,15 @@ angular.module('europapp', ['ionic', 'europapp.controllers', 'europapp.services'
                         controller: 'AroundCtrl'
                     }
                 }
+            })
+            .state('tab.around-detail', {
+                url: '/around/:aroundId',
+                views: {
+                    'tab-events': {
+                        templateUrl: 'templates/around-detail.html',
+                        controller: 'AroundDetailCtrl'
+                    }
+                }
             });
 
         // if none of the above states are matched, use this as the fallback
