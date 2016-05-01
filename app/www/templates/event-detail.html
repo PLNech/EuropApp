@@ -5,13 +5,15 @@
   The Friends service returns an array of friend data
 -->
 <ion-view view-title="{{event.name}}">
-    <ion-content class="event-detail padding">
-        <img ng-src="{{event.img}}" style="width: 64px; height: 64px">
-        <h1><i class="icon ion-ios-paper-outline"></i> {{event.name}}</h1>
-        <h2><i class="icon ion-person"></i> {{event.speaker}}</h2>
-        <p><i class="icon ion-calendar"></i>{{event.date | date}}</p>
-        <p><i class="icon ion-clock"></i>{{event.time}} | {{event.duration | duration}}</p>
-        <p><i class="icon ion-earth"></i>{{event.place}}</p>
-        <p>{{event.description}}</p>
+    <ion-content class="padding">
+        <div class="event-detail">
+            <img ng-src="{{event.img}}" style="width: 64px; height: 64px">
+            <h1><i class="icon ion-ios-paper-outline"></i> {{event.name}}</h1>
+            <h2><i class="icon ion-person"></i> {{event.speaker}}</h2>
+            <p><i class="icon ion-calendar"></i>{{event.date | date}}</p>
+            <p><i class="icon ion-clock"></i>{{event.time}} | {{event.duration | duration}}</p>
+            <p><i class="icon ion-earth"></i>{{event.place}}</p>
+            <p>{{event.description}}</p>
+        </div>
     </ion-content>
 </ion-view>
