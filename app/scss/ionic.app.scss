@@ -27,24 +27,33 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
     font-weight: bold;
   }
 
+  .event-date, .event-place, .event-duration {
+    margin: 0;
+  }
+
   .event-place {
-    margin: 0 5px;
+    margin-right: 10px;
     font-size: 12px;
     font-weight: bold;
     color: darkgray;
-    float: right;
+    float: left;
   }
 
   .event-duration {
+    margin: 2px 0;
     font-size: 10px;
     font-style: italic;
     color: gray;
-    float: right;
+    float: left;
   }
 
   .event-speaker {
     font-size: 15px;
     color: gray;
+  }
+  
+  .event-description {
+    color: #111;
   }
 }
 

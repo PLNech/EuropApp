@@ -3,40 +3,54 @@ angular.module('europapp.services', [])
     .factory('Events', function() {
         var events = [{
             id: 1,
-            img: "img/randy.jpg",
-            speaker: "Randy Rettberg",
-            name: "Welcome!",
-            description: "Welcome speech to remind the objectives of iGEM and celebrate the sharing of science.",
-            place: "Amphi 1",
-            duration: 90,
-            date: new Date().toJSON()
+            type: "break",
+            speakers: [],
+            name: "Welcoming and Exposition",
+            description: "Have a breakfast while discovering all the stands.",
+            place: "Main hall",
+            date: "Saturday",
+            time: "09:00",
+            duration: 240
         }, {
             id: 2,
-            img: "img/igem-ionis.png",
-            speaker: "iGEM IONIS",
-            name: "A drone against pollution",
-            description: "The iGEM IONIS team introduces its 2016 project.",
-            place: "Amphi 2",
-            duration: 60,
-            date: new Date().toJSON()
+            type: "food",
+            speakers: [],
+            name: "Lunch Break",
+            description: "Take a break at one of the nearby restaurants.",
+            place: "Main hall",
+            date: "Saturday",
+            time: "12:00",
+            duration: 120
         }, {
             id: 3,
-            img: "img/max.png",
-            speaker: "Max Y",
-            name: "Ipsum",
-            description: "Max gives us his opinion on future.",
-            place: "Amphi 3",
-            duration: 30,
-            date: new Date().toJSON()
+            type: "roundtable",
+            speakers: [],
+            name: "Roundtable #1: the future of Biotech",
+            description: "Listen to an expert's debate on actual topics.",
+            place: "Amphitheater 1",
+            date: "Saturday",
+            time: "14:00",
+            duration: 90
+        }, {
+            id: 3,
+            type: "break",
+            speakers: [],
+            name: "Coffee Break",
+            description: "Take a break before the second roundtable.",
+            place: "Amphitheater 1",
+            date: "Saturday",
+            time: "14:00",
+            duration: 90
         }, {
             id: 4,
-            img: "img/mike.png",
-            speaker: "Mike Z",
-            name: "Amet",
-            description: "Mike's amazing story.",
-            place: "Amphi 4",
-            duration: 45,
-            date: new Date().toJSON()
+            type: "roundtable",
+            speakers: [],
+            name: "Roundtable #2: CRISPR-Cas9: now what?",
+            description: "Listen to an expert's debate on actual topics.",
+            place: "Amphitheater 1",
+            date: "Saturday",
+            time: "16:00",
+            duration: 90
         }];
 
         return {

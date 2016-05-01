@@ -1,5 +1,7 @@
-angular.module('europapp', ['ionic', 'europapp.controllers', 'europapp.services'])
-
+angular.module('europapp', ['ionic',
+        'europapp.controllers',
+        'europapp.services',
+        'europapp.filters'])
     .run(function($ionicPlatform) {
         $ionicPlatform.ready(function() {
             // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
