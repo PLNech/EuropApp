@@ -21,6 +21,11 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
 // Include all of Ionic
 @import "www/lib/ionic/scss/ionic";
 
+$main-blue:#4a87ee;
+$main-dark-blue: #30499f;
+$main-black:#111;
+$main-white:#eee;
+
 .list-events {
   .event-title {
     font-size: 20px;
@@ -49,11 +54,15 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
   }
 
   .event-description {
-    color: #111;
+    color: $main-black;
   }
 }
 
 .event-detail {
+  i {
+    margin: 0 5px 0 0;
+    color: $main-dark-blue;
+  }
   img {
     width: 50px;
     border: 2px;
@@ -75,7 +84,7 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
   margin: 5px;
   padding: 10px;
   border-radius: 2%;
-  border-color: #4a87ee;
+  border-color: $main-blue;
   border-style: solid;
   border-width: 2px;
 
