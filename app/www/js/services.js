@@ -24,7 +24,28 @@ angular.module('europapp.services', [])
         }, {
             id: 3,
             type: "roundtable",
-            speakers: [],
+            speakers: [{
+                name:"Randy",
+                img:"img/randy.jpg",
+                title:"iGEM Founder",
+                category:"star"
+            },{
+                name:"John Doe",
+                img:"img/ben.png",
+                title:"Bacteria lover"
+            },{
+                name:"Kevin Stew",
+                img:"img/max.png",
+                title:"Yogurt industry leader"
+            },{
+                name:"Pierre Curie",
+                img:"img/perry.png",
+                title:"Chemist, Nobel prize winner"
+            },{
+                name:"Adam First",
+                img:"img/adam.jpg",
+                title:"First living human clone"
+            }],
             name: "Roundtable #1: the future of Biotech",
             description: "Listen to an expert's debate on actual topics.",
             place: "Amphitheater 1",
@@ -45,14 +66,13 @@ angular.module('europapp.services', [])
             id: 4,
             type: "roundtable",
             speakers: [],
-            name: "Roundtable #2: CRISPR-Cas9: now what?",
+            name: "Roundtable #2: CRISPR/Cas9: now what?",
             description: "Listen to an expert's debate on actual topics.",
             place: "Amphitheater 1",
             date: "Saturday",
             time: "16:00",
             duration: 90
         }];
-
         return {
             all: function() {
                 return events;
