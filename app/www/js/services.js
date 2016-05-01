@@ -39,8 +39,8 @@ angular.module('europapp.services', [])
             description: "Take a break before the second roundtable.",
             place: "Amphitheater 1",
             date: "Saturday",
-            time: "14:00",
-            duration: 90
+            time: "15:30",
+            duration: 30
         }, {
             id: 4,
             type: "roundtable",

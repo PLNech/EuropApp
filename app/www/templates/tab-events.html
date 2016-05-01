@@ -1,25 +1,22 @@
 <ion-view view-title="Events">
     <ion-content class="padding">
         <section id="cd-timeline" class="cd-container list-events">
-            <div class="" ng-repeat="event in events"
+            <div class="cd-timeline-block" ng-repeat="event in events"
                  type="item-text-wrap"
                  ui-sref="tab.event-detail({eventId:event.id})">
-                <div class="cd-timeline-block">
-                    <!-- CUSTOMIZE YOUR STYLE USING DEFAULT IONIC VALUES SUCH AS POSITIVE, CALM, BALANCED,... -->
-                    <div class="cd-timeline-icon text-center royal">
-                        <i class="ion-coffee timelineIcon" ng-if="event.type=='break'"></i>
-                        <i class="ion-android-restaurant timelineIcon" ng-if="event.type=='food'"></i>
-                        <i class="ion-person-stalker timelineIcon" ng-if="event.type=='roundtable'"></i>
-                    </div>
-                    <!-- CUSTOMIZE YOUR STYLE USING DEFAULT IONIC VALUES SUCH AS POSITIVE, CALM, BALANCED,... -->
-                    <div class="cd-timeline-content padding royal">
-                        <h2 class="event-title">{{event.name}}</h2>
-                        <p class="event-date">{{event.date | date:'medium'}} {{event.time}}</p>
-                        <p class="event-speaker">{{event.speaker}}</p>
-                        <span class="event-place">{{event.place}}</span>
-                        <p class="event-duration">{{event.duration | duration}}</p><br />
-                        <p class="event-description">{{event.description}}</p>
-                    </div>
+                <div class="cd-timeline-icon text-center positive">
+                    <i class="ion-coffee timelineIcon" ng-if="event.type=='break'"></i>
+                    <i class="ion-android-restaurant timelineIcon" ng-if="event.type=='food'"></i>
+                    <i class="ion-person-stalker timelineIcon" ng-if="event.type=='roundtable'"></i>
+                </div>
+                <!-- CUSTOMIZE YOUR STYLE USING DEFAULT IONIC VALUES SUCH AS POSITIVE, CALM, BALANCED,... -->
+                <div class="cd-timeline-content padding positive">
+                    <h2 class="event-title">{{event.name}}</h2>
+                    <p class="event-date">{{event.date | date:'medium'}} {{event.time}}</p>
+                    <p class="event-speaker">{{event.speaker}}</p>
+                    <span class="event-place">{{event.place}}</span>
+                    <p class="event-duration">{{event.duration | duration}}</p><br/>
+                    <p class="event-description">{{event.description}}</p>
                 </div>
             </div>
         </section>

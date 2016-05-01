@@ -27,10 +27,6 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
     font-weight: bold;
   }
 
-  .event-date, .event-place, .event-duration {
-    margin: 0;
-  }
-
   .event-place {
     margin-right: 10px;
     font-size: 12px;
@@ -51,7 +47,7 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
     font-size: 15px;
     color: gray;
   }
-  
+
   .event-description {
     color: #111;
   }
