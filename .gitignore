@@ -26,3 +26,6 @@ plugins
 
 # Non-code project files
 mockups/
+
+# Sensitive files
+*.keystore
