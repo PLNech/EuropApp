@@ -21,10 +21,10 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
 // Include all of Ionic
 @import "www/lib/ionic/scss/ionic";
 
-$main-blue:#4a87ee;
+$main-blue: #4a87ee;
 $main-dark-blue: #30499f;
-$main-black:#111;
-$main-white:#eee;
+$main-black: #111;
+$main-white: #eee;
 
 .list-events {
   .event-title {
@@ -96,4 +96,39 @@ $main-white:#eee;
     font-size: 15px;
   }
 
+}
+
+.tab-home {
+  .bar-subheader {
+    margin-top: 5px;
+    h2 {
+      font-size: 14px;
+      font-style: italic;
+    }
+  }
+  h3 {
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 20px;
+  }
+  h4 {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 10px;
+  }
+  h5 {
+    font-weight: 600;
+    font-size: 14px;
+    margin: 15px 0 10px;
+  }
+  $img-size: 20px;
+  img {
+    width: $img-size;
+    height: $img-size;
+    display: block;
+    margin: 0 auto;
+  }
+  p.intro {
+    margin-top: 50px; //TODO: Why?
+  }
 }
