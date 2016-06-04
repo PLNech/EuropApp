@@ -1,20 +1,28 @@
-<ion-view view-title="Around">
+<ion-view view-title="Around" class="tab-around">
     <ion-content>
         <ion-list class="list-around">
-            <div ng-repeat="category in around">
+            <div class="card" ng-repeat="category in around">
                 <h2>{{category.name}}</h2>
-                <ion-item class="item-divider"></ion-item>
                 <ion-item class="item-remove-animate item-avatar item-icon-right" ng-repeat="item in category.items"
                           type="item-text-wrap">
                     <div ui-sref="tab.around-detail({itemId:item.id})">
-
                         <img ng-src="{{item.img}}">
                         <h2 class="item-title">{{item.name}}</h2>
                         <div class="info-item">
                             <p>{{item.description}}</p>
                             <p class="around-address">{{item.address}}</p>
-                            <p class="around-phone"><a href="tel://{{item.phone}}">{{item.phone}}</a></p>
-                            <p class="around-website"><a href="{{item.website}}">Official website</a></p>
+                            <div class="around-links">
+                                <div class="row">
+                                    <div class="col">
+                                        <a class="around-phone button button-small button-positive button-outline"
+                                           href="tel://{{item.phone}}">{{item.phone}}</a>
+                                    </div>
+                                    <div class="col">
+                                        <a class="around-website button button-small button-positive button-outline"
+                                           href="{{item.website}}">Official website</a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         <i class="icon ion-chevron-right icon-accessory"></i>
                         <ion-option-button class="button-calm" ng-click="share(event)">

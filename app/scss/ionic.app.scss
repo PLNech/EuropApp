@@ -121,7 +121,7 @@ $main-white: #eee;
     font-size: 14px;
     margin: 15px 0 10px;
   }
-  $img-size: 20px;
+  $img-size: 30px;
   img {
     width: $img-size;
     height: $img-size;
@@ -130,5 +130,26 @@ $main-white: #eee;
   }
   p.intro {
     margin-top: 50px; //TODO: Why?
+  }
+}
+
+.tab-around {
+  $img-size: 50px;
+  img {
+    width: $img-size;
+    height: $img-size;
+    float: left;
+    margin-right: 10px;
+  }
+  .item-content {
+    padding-left: 14px;
+  }
+  .around-phone, .around-website {
+    display: inline;
+    margin: auto;
+  }
+  button a {
+    text-decoration: none;
+    font-weight: 500;
   }
 }
