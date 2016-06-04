@@ -12,6 +12,8 @@ bower_components/
 # Generated files
 build/
 *.apk
+app/resources/
+app/config.xml
 
 # OS Files
 *.DS_Store
