@@ -179,6 +179,21 @@ angular.module('europapp.services', [])
     })
     .factory('Teams', function() {
         var teams = [{
+            name: "iGEM IONIS Team",
+            description: "Composed of 15 members, this team is a multidisciplinary group from 6 different schools " +
+            "with various formations: biology (Sup’Biotech), marketing & communication (Sup’Biotech ; Ionis-STM), " +
+            "computer science (Epita ; Epitech), aeronautics (IPSA) and design (E-artsup). " +
+            "Together, we are building our iGEM 2016 project.",
+            project: "The project, named Quantifly, allows a quantitative and precise analysis " +
+            "of atmospheric pollution. To do so, the iGEM IONIS team uses genetically engineered E.coli " +
+            "that uses bioluminescence as a reporter to detect air pollution. This biosensor device " +
+            "is then embarked on a drone. This device will be used as a precise and innovative mapping tool, " +
+            "which will allow us to realize quality analysis of air adapted to the zone to be covered.",
+            facebook: "ionisigem",
+            twitter: "IONIS_iGEM",
+            email: "ionis.igem@gmail.com",
+            logo: "logo_ionis"
+        }, {
             name: "Évry Team",
             description: "Since 2012, Université d’Évry-Val-d’Essonne has participated in iGEM as Évry Team. " +
             "With the support of the Institute of Systems and Synthetic Biology (iSSB) and Genopole, " +
@@ -190,21 +205,8 @@ angular.module('europapp.services', [])
             "and use their PLA for a real application in biomedicine and 3D printing.",
             facebook: "iGEM.Evry.2016",
             twitter: "iGEM_Evry",
-            email: "evryigem2016@gmail.com"
-        }, {
-            name: "iGEM IONIS Team",
-            description: "Composed of 15 members, this team is a multidisciplinary group from 6 different schools " +
-            "with various formations: biology (Sup’Biotech), marketing & communication (Sup’Biotech ; Ionis-STM), " +
-            "computer science (Epita ; Epitech), aeronautic (IPSA) and design (E-artsup). " +
-            "Together, we are building our iGEM 2016 project.",
-            project: "The project, named Quantifly, allows a quantitative and precise analysis " +
-            "of atmospheric pollution. To do so, the iGEM IONIS team uses genetically engineered E.coli " +
-            "that uses bioluminescence as a reporter to detect air pollution. This biosensor device " +
-            "is then embarked on a drone. This device will be used as a precise and innovative mapping tool, " +
-            "which will allow us to realize quality analysis of air adapted to the zone to be covered.",
-            facebook: "ionisigem",
-            twitter: "IONIS_iGEM",
-            email: "ionis.igem@gmail.com"
+            email: "evryigem2016@gmail.com",
+            logo: "logo_evry"
         }];
         return {
             all: function() {

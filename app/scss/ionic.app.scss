@@ -122,21 +122,26 @@ $main-white: #eee;
     font-size: 14px;
     margin: 15px 0 10px;
   }
-  $img-size: 30px;
-  img {
-    width: $img-size;
-    height: $img-size;
-    display: block;
-    margin: 0 auto;
-  }
   p.intro {
     margin-top: 50px; //TODO: Why?
   }
   .card {
     margin-bottom: 30px;
   }
+  img.logo {
+    width: 150px;
+    float: right;
+    margin: 0 5px 5px;
+  }
   .row {
-    margin: 0 0 30px ;
+    margin: 0 0 30px;
+    $img-size: 30px;
+    img {
+      width: $img-size;
+      height: $img-size;
+      display: block;
+      margin: 0 auto;
+    }
   }
 }
 
