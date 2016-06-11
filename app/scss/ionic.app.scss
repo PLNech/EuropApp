@@ -107,6 +107,7 @@ $main-white: #eee;
     }
   }
   h3 {
+    font-style: italic;
     font-size: 16px;
     font-weight: 400;
     margin-bottom: 20px;
@@ -130,6 +131,12 @@ $main-white: #eee;
   }
   p.intro {
     margin-top: 50px; //TODO: Why?
+  }
+  .card {
+    margin-bottom: 30px;
+  }
+  .row {
+    margin: 0 0 30px ;
   }
 }
 

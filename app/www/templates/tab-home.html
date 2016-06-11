@@ -1,10 +1,4 @@
 <ion-view view-title="Home" class="tab-home">
-    <!--<div class="bar bar-header bar-royal">-->
-    <!--<h1>The European Experience</h1>-->
-    <!--</div>-->
-    <!--<div class="bar bar-subheader bar-royal">-->
-    <!--<h2>Companion App</h2>-->
-    <!--</div>-->
     <ion-content class="padding has-header">
         <div class="bar bar-header bar-positive">
             <div class="h1 title">The European Experience</div>
@@ -17,23 +11,27 @@
                 This app will help you make the most out of the event,
                 knowing what you can do and where everything happens!
             <p>
-            <h3>The European Experience is organised by the Team Évry and iGEM IONIS teams.</h3>
+            <h3>The European Experience is organised by the iGEM IONIS Team and the Team Évry.</h3>
             <!--<div class="item item-divider">-->
             <div class="card" ng-repeat="team in teams">
                 <div class="item item-text-wrap">
-                    <h4 class="title">{{team.name}}</h4>
-                    <p>{{team.description}}</p>
-                    <h5>Project 2016</h5>
-                    <p>{{team.project}}</p>
-                    <div class="row">
-                        <div class="col">
-                            <a href="https://www.facebook.com/{{team.facebook}}"><img src="img/facebook.png"></a>
-                        </div>
-                        <div class="col">
-                            <a href="https://twitter.com/{{team.twitter}}"><img src="img/twitter.png"></a>
-                        </div>
-                        <div class="col">
-                            <a href="mailto:{{team.email}}"><img src="img/email.png"></a>
+                    <div class="bar bar-header bar-stable">
+                        <h4 class="title">{{team.name}}</h4>
+                    </div>
+                    <div class="content has-header">
+                        <p>{{team.description}}</p>
+                        <h5>Project 2016</h5>
+                        <p>{{team.project}}</p>
+                        <div class="row">
+                            <div class="col">
+                                <a href="https://www.facebook.com/{{team.facebook}}"><img src="img/facebook.png"></a>
+                            </div>
+                            <div class="col">
+                                <a href="https://twitter.com/{{team.twitter}}"><img src="img/twitter.png"></a>
+                            </div>
+                            <div class="col">
+                                <a href="mailto:{{team.email}}"><img src="img/email.png"></a>
+                            </div>
                         </div>
                     </div>
                 </div>
