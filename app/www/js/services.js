@@ -1,5 +1,4 @@
 angular.module('europapp.services', [])
-
     .factory('Events', function() {
         var events = [{
             id: 1,
@@ -25,26 +24,26 @@ angular.module('europapp.services', [])
             id: 3,
             type: "roundtable",
             speakers: [{
-                name:"Randy",
-                img:"img/randy.jpg",
-                title:"iGEM Founder",
-                category:"star"
-            },{
-                name:"John Doe",
-                img:"img/ben.png",
-                title:"Bacteria lover"
-            },{
-                name:"Kevin Stew",
-                img:"img/max.png",
-                title:"Yogurt industry leader"
-            },{
-                name:"Pierre Curie",
-                img:"img/perry.png",
-                title:"Chemist, Nobel prize winner"
-            },{
-                name:"Adam First",
-                img:"img/adam.jpg",
-                title:"First living human clone"
+                name: "Randy",
+                img: "img/randy.jpg",
+                title: "iGEM Founder",
+                category: "star"
+            }, {
+                name: "John Doe",
+                img: "img/ben.png",
+                title: "Bacteria lover"
+            }, {
+                name: "Kevin Stew",
+                img: "img/max.png",
+                title: "Yogurt industry leader"
+            }, {
+                name: "Pierre Curie",
+                img: "img/perry.png",
+                title: "Chemist, Nobel prize winner"
+            }, {
+                name: "Adam First",
+                img: "img/adam.jpg",
+                title: "First living human clone"
             }],
             name: "Roundtable #1: the future of Biotech",
             description: "Listen to an expert's debate on actual topics.",
@@ -177,4 +176,51 @@ angular.module('europapp.services', [])
                 return null;
             }
         };
-    });
+    })
+    .factory('Teams', function() {
+        var teams = [{
+            name: "Évry Team",
+            description: "Since 2012, Université d’Évry-Val-d’Essonne has participated in iGEM as Évry Team. " +
+            "With the support of the Institute of Systems and Synthetic Biology (iSSB) and Genopole, " +
+            "it has already been possible to send 4 teams of motivated students to the international " +
+            "competition, who have succeeded in presenting brilliant projects.",
+            project: "After some months of brainstorming and organization, the Évry team 2016 is ready to involve " +
+            "themselves in producing bioplastic, concretely Poly-Lactic Acid (PLA). Évry will face the challenge " +
+            "of engineering Pseudomonas putida for obtaining it. Moreover, they will characterize " +
+            "and use their PLA for a real application in biomedicine and 3D printing.",
+            facebook: "iGEM.Evry.2016",
+            twitter: "iGEM_Evry",
+            email: "evryigem2016@gmail.com"
+        }, {
+            name: "iGEM IONIS Team",
+            description: "Composed of 15 members, this team is a multidisciplinary group from 6 different schools " +
+            "with various formations: biology (Sup’Biotech), marketing & communication (Sup’Biotech ; Ionis-STM), " +
+            "computer science (Epita ; Epitech), aeronautic (IPSA) and design (E-artsup). " +
+            "Together, we are building our iGEM 2016 project.",
+            project: "The project, named Quantifly, allows a quantitative and precise analysis " +
+            "of atmospheric pollution. To do so, the iGEM IONIS team uses genetically engineered E.coli " +
+            "that uses bioluminescence as a reporter to detect air pollution. This biosensor device " +
+            "is then embarked on a drone. This device will be used as a precise and innovative mapping tool, " +
+            "which will allow us to realize quality analysis of air adapted to the zone to be covered.",
+            facebook: "ionisigem",
+            twitter: "IONIS_iGEM",
+            email: "ionis.igem@gmail.com"
+        }];
+        return {
+            all: function() {
+                return teams;
+            },
+            remove: function(event) {
+                teams.splice(teams.indexOf(event), 1);
+            },
+            get: function(eventId) {
+                for (var i = 0; i < teams.length; i++) {
+                    if (teams[i].id === parseInt(eventId)) {
+                        return teams[i];
+                    }
+                }
+                return null;
+            }
+        };
+    })
+;

@@ -1,5 +1,6 @@
 angular.module('europapp.controllers', [])
-    .controller('HomeCtrl', function($scope) {
+    .controller('HomeCtrl', function($scope, Teams) {
+        $scope.teams = Teams.all();
     })
 
     .controller('MapCtrl', function($scope) {

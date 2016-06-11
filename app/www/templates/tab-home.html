@@ -19,32 +19,21 @@
             <p>
             <h3>The European Experience is organised by the Team Évry and iGEM IONIS teams.</h3>
             <!--<div class="item item-divider">-->
-            <div class="card">
+            <div class="card" ng-repeat="team in teams">
                 <div class="item item-text-wrap">
-                    <h4 class="title">Évry Team</h4>
-                    <p>
-                        Since 2012, Université d’Évry-Val-d’Essonne has participated in iGEM as Évry Team.
-                        With the support of the Institute of Systems and Synthetic Biology (iSSB) and Genopole,
-                        it has already been possible to send 4 teams of motivated students to the international
-                        competition, who have succeeded in presenting brilliant projects.
-                    </p>
+                    <h4 class="title">{{team.name}}</h4>
+                    <p>{{team.description}}</p>
                     <h5>Project 2016</h5>
-                    <p>
-                        After some months of brainstorming and organization, the Évry team 2016 is ready
-                        to involve themselves in producing bioplastic, concretely Poly-Lactic Acid (PLA).
-                        Évry will face the challenge of engineering Pseudomonas putida for obtaining it.
-                        Moreover, they will characterize and use their PLA for a real application in
-                        biomedicine and 3D printing.
-                    </p>
+                    <p>{{team.project}}</p>
                     <div class="row">
                         <div class="col">
-                            <a href="https://www.facebook.com/iGEM.Evry.2016"><img src="img/facebook.png"></a>
+                            <a href="https://www.facebook.com/{{team.facebook}}"><img src="img/facebook.png"></a>
                         </div>
                         <div class="col">
-                            <a href="https://twitter.com/iGEM_Evry"><img src="img/twitter.png"></a>
+                            <a href="https://twitter.com/{{team.twitter}}"><img src="img/twitter.png"></a>
                         </div>
                         <div class="col">
-                            <a href="mailto:evryigem2016@gmail.com"><img src="img/email.png"></a>
+                            <a href="mailto:{{team.email}}"><img src="img/email.png"></a>
                         </div>
                     </div>
                 </div>
