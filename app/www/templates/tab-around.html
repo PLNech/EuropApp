@@ -2,34 +2,43 @@
     <ion-content>
         <ion-list class="list-around">
             <div class="card" ng-repeat="category in around">
-                <h2>{{category.name}}</h2>
-                <ion-item class="item-remove-animate item-avatar item-icon-right" ng-repeat="item in category.items"
-                          type="item-text-wrap">
-                    <div ui-sref="tab.around-detail({itemId:item.id})">
-                        <img ng-src="{{item.img}}">
-                        <h2 class="item-title">{{item.name}}</h2>
-                        <div class="info-item">
-                            <p>{{item.description}}</p>
-                            <p class="around-address">{{item.address}}</p>
-                            <div class="around-links">
-                                <div class="row">
-                                    <div class="col">
-                                        <a class="around-phone button button-small button-positive button-outline"
-                                           href="tel://{{item.phone}}">{{item.phone}}</a>
-                                    </div>
-                                    <div class="col">
-                                        <a class="around-website button button-small button-positive button-outline"
-                                           href="{{item.website}}">Official website</a>
+                <div class="item item-divider">
+                    <h2>{{category.name}}</h2>
+                </div>
+                <div class="item">
+                    <div ng-repeat="subcategory in category.categories">
+                        <h3>{{subcategory.name}}</h3>
+                        <ion-item class="item item-remove-animate item-avatar item-icon-right"
+                                  ng-repeat="item in subcategory.items"
+                                  type="item-text-wrap">
+                            <div ui-sref="tab.around-detail({itemId:item.id})">
+                                <img ng-src="{{item.img}}">
+                                <h2 class="item-title">{{item.name}}</h2>
+                                <div class="info-item">
+                                    <p>{{item.description}}</p>
+                                    <p class="around-address">{{item.address}}</p>
+                                    <div class="around-links">
+                                        <div class="row">
+                                            <div class="col">
+                                                <a class="around-phone button button-small button-positive button-outline"
+                                                   href="tel://{{item.phone}}">{{item.phone}}</a>
+                                            </div>
+                                            <div class="col">
+                                                <a class="around-website button button-small button-positive button-outline"
+                                                   href="{{item.website}}">{{item.website_name ? item.website_name :
+                                                    "Official website"}}</a>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
+                                <i class="icon ion-chevron-right icon-accessory"></i>
+                                <ion-option-button class="button-calm" ng-click="share(event)">
+                                    Share
+                                </ion-option-button>
                             </div>
-                        </div>
-                        <i class="icon ion-chevron-right icon-accessory"></i>
-                        <ion-option-button class="button-calm" ng-click="share(event)">
-                            Share
-                        </ion-option-button>
+                        </ion-item>
                     </div>
-                </ion-item>
+                </div>
             </div>
         </ion-list>
     </ion-content>

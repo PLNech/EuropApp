@@ -90,86 +90,221 @@ angular.module('europapp.services', [])
         };
     })
     .factory('Around', function() {
+        //noinspection SpellCheckingInspection
         /**
          * EAT/DRINK/CULTURE/FUN-TOURISM/TRANSPORTATION
          * Name/Photo/Description/Address/Phone/Website
          *
          * @type {*[]}
          */
-        var around = [{
-            name: "Eat", items: [
+        var around = [
+            {
+                name: "Food", categories: [
                 {
-                    id: 1,
-                    img: "img/around/tea.png",
-                    name: "Sesame et sel",
-                    description: "Korean restaurant.",
-                    address: "123 rue des Poireaux",
-                    phone: "023123123",
-                    website: "sesameetsel.com"
+                    name: "Low Price (<10€)", items: [
+                    {
+                        img: "img/around/macdonalds.jpg",
+                        name: "McDonald's",
+                        description: "McDonald's Paris parmentier.",
+                        address: "88bis Av Parmentier, 159 Rue Oberkampf",
+                        phone: "0143552510",
+                        website: "https://www.restaurants.mcdonalds.fr/mcdonalds-paris-parmentier"
+                    },
+                    {
+                        img: "img/around/kfc.png",
+                        name: "KFC",
+                        description: "Kentucky Fried Chicken",
+                        address: "152 Boulevard de Ménilmontant",
+                        phone: "0143491600",
+                        website: "kfc.fr"
+                    },
+                    {
+                        img: "img/around/subway.jpg",
+                        name: "Subway",
+                        description: "Subway Paris Oberkampf",
+                        address: "121 Rue Oberkampf",
+                        phone: "0148055100",
+                        website: "cafecrocus.fr"
+                    },
+                    {
+                        img: "img/around/sofast.png",
+                        name: "So Fast",
+                        description: "Fast food, Pizzas",
+                        address: "88 Rue Oberkampf",
+                        phone: "0148054041",
+                        website: "www.so-fast.fr"
+                    },
+                    {
+                        img: "img/around/kebab.png",
+                        name: "Burak",
+                        description: "Lebanese-Greek Fast Food",
+                        address: "81 Avenue Parmentier",
+                        phone: "0147002294",
+                        website: "http://www.yelp.com/biz/burak-paris",
+                        website_name: "Yelp"
+                    }
+                ]
                 },
                 {
-                    id: 2,
-                    img: "img/around/cafet.png",
-                    name: "La Cafet",
-                    description: "School Cafeteria.",
-                    address: "Cour Pasteur",
-                    phone: "023123123",
-                    website: "cafecrocus.fr"
-                }
-            ]
-        },
-            {
-                name: "Drink", items: [
-                {
-                    id: 1,
-                    img: "img/around/tea.png",
-                    name: "Salon de thé",
-                    description: "Tea and scones near the venue.",
-                    address: "25 Rue des Fleurs",
-                    phone: "023123123",
-                    website: "http://teaplace.fr"
+                    name: "Medium price (between 10€ - 20€)", items: [
+                    {
+                        img: "img/around/bm.png",
+                        name: "B&M Burgers",
+                        description: "Homemade burgers, including vegetarian ones.",
+                        address: "82 Avenue Parmentier",
+                        phone: "0143572611",
+                        website: "www.bmburgers.com"
+                    },
+                    {
+                        img: "img/around/pny.png",
+                        name: "PNY",
+                        description: "Paris New York Hamburgers",
+                        address: "96 Rue Oberkampf",
+                        phone: "0984378150",
+                        website: "www.pny-hamburgers.fr"
+                    },
+                    {
+                        img: "img/around/wcg.png",
+                        name: "West Country Girl",
+                        description: "Galettes & Crêpes",
+                        address: "6 Passage Saint-Ambroise",
+                        phone: "0147007254",
+                        website: ""
+                    },
+                    {
+                        img: "img/around/restaurant.png",
+                        name: "Les Anémones",
+                        description: "Bistrot Français",
+                        address: "41 Avenue de la République",
+                        phone: "0143575734",
+                        website: "https://www.yelp.fr/biz/les-an%C3%A9mones-paris-3",
+                        website_name: "Yelp"
+                    },
+                    {
+                        img: "img/around/sushi.png",
+                        name: "Sushi Folie’s",
+                        description: "Japanese restaurant",
+                        address: "56 Bis Rue Oberkampf",
+                        phone: "0143555838",
+                        website: "http://www.sushifolies.fr/"
+                    },
+                    {
+                        img: "img/around/idfun.png",
+                        name: "ID Fun Sushi",
+                        description: "Japanese Restaurant",
+                        address: "94 Avenue Parmentier",
+                        phone: "0143573369",
+                        website: "http://www.idfunsushi-75.fr/"
+                    },
+                    {
+                        img: "img/around/asian.png",
+                        name: "Bon Appétit",
+                        description: "Chinese Restaurant",
+                        address: "79 Avenue Parmentier",
+                        phone: "0143574969",
+                        website: "http://www.linternaute.com/restaurant/restaurant/158451/bon-appetit.shtml",
+                        website_name: "L'Internaute"
+                    },
+                    {
+                        img: "img/around/arlecchino.png",
+                        name: "Arlecchino",
+                        description: "Italian Restaurant",
+                        address: "42 Avenue de la République",
+                        phone: "0143144961",
+                        website: "http://www.restaurant-arlecchino.com/"
+                    },
+                    {
+                        img: "img/around/altaglio.png",
+                        name: "Altaglio",
+                        description: "Italian Pizzas",
+                        address: "2 Bis Rue Neuve Popincourt",
+                        phone: "0143381200",
+                        website: "http://www.altaglio.fr/"
+                    },
+                    {
+                        img: "img/around/village.png",
+                        name: "Le Village",
+                        description: "West African Restaurant",
+                        address: "86 Avenue Parmentier",
+                        phone: "0148056345",
+                        website: "http://www.restaurantafricain-levillage.fr/"
+                    },
+                    {
+                        img: "img/around/manguier.png",
+                        name: "Le Manguier",
+                        description: "Senegalese Restaurant",
+                        address: "67 Avenue Parmentier",
+                        phone: "0148070327",
+                        website: "http://www.lafourchette.com/restaurant/le-manguier/6566",
+                        website_name: "La Fourchette"
+                    }
+                ]
                 },
                 {
-                    id: 2,
-                    img: "img/around/disk.png",
-                    name: "La Diskotek",
-                    description: "Drink and meet other drunk people.",
-                    address: "321 Place rouge",
-                    phone: "023123123",
-                    website: "disko.com"
+                    name: "Gourmet (>20€)", items: [
+                    {
+                        img: "img/around/raclette.png",
+                        name: "Les Fondus de la Raclette",
+                        description: "French Cuisine",
+                        address: "107 Avenue Parmentier",
+                        phone: "0140216168",
+                        website: "http://www.lesfondusdelaraclette.fr/"
+                    },
+                    {
+                        img: "img/around/barbershop.png",
+                        name: "Barbershop",
+                        description: "Bistrot Lounge",
+                        address: "68 Avenue de la République",
+                        phone: "0981111285",
+                        website: "http://www.lafourchette.com/restaurant/barbershop/5930",
+                        website_name: "La Fourchette"
+                    },
+                    {
+                        img: "img/around/soleil.png",
+                        name: "Le Plein Soleil",
+                        description: "90 Avenue Parmentier",
+                        address: "Brasserie Française",
+                        phone: "0148054106",
+                        website: "http://www.lepleinsoleilparis.fr/"
+                    },
+                    {
+                        img: "img/around/deux_amis.jpg",
+                        name: "Aux Deux Amis",
+                        description: "Brasserie, French/Spanish Tapas",
+                        address: "45 Rue Oberkampf",
+                        phone: "0158303813",
+                        website: "https://www.yelp.fr/biz/aux-deux-amis-paris",
+                        website_name: "Yelp"
+                    },
+                    {
+                        img: "img/around/vertigo.png",
+                        name: "Le Vertigo",
+                        description: "Northern French cuisine, cosy style",
+                        address: "18, rue de Lacharrière 75011 Paris",
+                        phone: "0155287007",
+                        website: "http://www.vertigoparis.fr/"
+                    },
+                    {
+                        img: "img/around/deer.png",
+                        name: "Thank You My Deer",
+                        description: "Gluten-free Coffee Shop/Restaurant",
+                        address: "112 Rue Saint Maur",
+                        phone: "0171931624",
+                        website: "http://thankyoumydeer.com/coffeeshop/"
+                    }
+                ]
                 }
             ]
-            },
-            {
-                name: "Culture", items: []
-            },
-            {
-                name: "Fun/Tourism", items: [
-                {
-                    id: 2,
-                    img: "img/around/disk.png",
-                    name: "La Diskotek",
-                    description: "Drink and meet other drunk people.",
-                    address: "321 Place rouge",
-                    phone: "023123123",
-                    website: "disko.com"
-                }
-            ]
-            },
-            {
-                name: "Transportation", items: []
-            }];
+            }
+        ];
 
         return {
             all: function() {
                 return around;
             },
-            remove: function(around) {
-                around.splice(around.indexOf(around), 1);
-            },
-            get: function(aroundId) {
+            get: function(aroundName) {
                 for (var i = 0; i < around.length; i++) {
-                    if (around[i].id === parseInt(aroundId)) {
+                    if (around[i].name === aroundName) {
                         return around[i];
                     }
                 }

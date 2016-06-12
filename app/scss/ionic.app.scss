@@ -164,4 +164,12 @@ $main-white: #eee;
     text-decoration: none;
     font-weight: 500;
   }
+  .item {
+    h3 {
+      border: 0 solid #ddd;
+      border-top-width: 1px;
+      padding-top: 3px;
+      margin-top: 1px;
+    }
+  }
 }
