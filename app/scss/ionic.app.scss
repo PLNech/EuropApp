@@ -168,8 +168,18 @@ $main-white: #eee;
     h3 {
       border: 0 solid #ddd;
       border-top-width: 1px;
-      padding-top: 3px;
-      margin-top: 1px;
+      border-bottom-width: 1px;
+      padding: 6px 0;
+      margin: 1px 0 0;
+      font-size: large;
+      text-align: center;
+      background-color: #fdfdfd;
+    }
+    h2 {
+      font-size: 15px;
+    }
+    p, h4 {
+      white-space: normal;
     }
   }
 }

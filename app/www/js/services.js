@@ -105,7 +105,7 @@ angular.module('europapp.services', [])
                     {
                         img: "img/around/macdonalds.jpg",
                         name: "McDonald's",
-                        description: "McDonald's Paris parmentier.",
+                        description: "McDonald's Paris parmentier",
                         address: "88bis Av Parmentier, 159 Rue Oberkampf",
                         phone: "0143552510",
                         website: "https://www.restaurants.mcdonalds.fr/mcdonalds-paris-parmentier"
@@ -124,7 +124,7 @@ angular.module('europapp.services', [])
                         description: "Subway Paris Oberkampf",
                         address: "121 Rue Oberkampf",
                         phone: "0148055100",
-                        website: "cafecrocus.fr"
+                        website: "www.subwayfrance.fr"
                     },
                     {
                         img: "img/around/sofast.png",
@@ -142,6 +142,14 @@ angular.module('europapp.services', [])
                         phone: "0147002294",
                         website: "http://www.yelp.com/biz/burak-paris",
                         website_name: "Yelp"
+                    },
+                    {
+                        img: "img/around/deer.png",
+                        name: "Thank You My Deer",
+                        description: "Gluten-free Coffee Shop/Restaurant",
+                        address: "112 Rue Saint Maur",
+                        phone: "0171931624",
+                        website: "http://thankyoumydeer.com/coffeeshop/"
                     }
                 ]
                 },
@@ -245,7 +253,7 @@ angular.module('europapp.services', [])
                     {
                         img: "img/around/raclette.png",
                         name: "Les Fondus de la Raclette",
-                        description: "French Cuisine",
+                        description: "Traditional French Cuisine",
                         address: "107 Avenue Parmentier",
                         phone: "0140216168",
                         website: "http://www.lesfondusdelaraclette.fr/"
@@ -279,18 +287,10 @@ angular.module('europapp.services', [])
                     {
                         img: "img/around/vertigo.png",
                         name: "Le Vertigo",
-                        description: "Northern French cuisine, cosy style",
-                        address: "18, rue de Lacharrière 75011 Paris",
+                        description: "Northern France & Catalan Restaurant & Lounge",
+                        address: "18, rue de Lacharrière",
                         phone: "0155287007",
                         website: "http://www.vertigoparis.fr/"
-                    },
-                    {
-                        img: "img/around/deer.png",
-                        name: "Thank You My Deer",
-                        description: "Gluten-free Coffee Shop/Restaurant",
-                        address: "112 Rue Saint Maur",
-                        phone: "0171931624",
-                        website: "http://thankyoumydeer.com/coffeeshop/"
                     }
                 ]
                 }
