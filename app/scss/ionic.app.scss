@@ -172,7 +172,12 @@ $main-white: #eee;
   .around-phone, .around-website {
     display: inline;
     margin: auto;
-    font-size: 15px;
+  }
+  .around-phone {
+    margin-right: 10px;
+  }
+  .around-website {
+    margin-left: 10px;
   }
   button a {
     text-decoration: none;

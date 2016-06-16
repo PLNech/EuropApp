@@ -5,31 +5,31 @@
                 <h2>{{category.name}}</h2>
             </div>
             <div class="item">
-                <div ng-repeat="subcategory in category.categories">
+                <div class="subcategory" ng-repeat="subcategory in category.categories">
                     <h3>{{subcategory.name}}</h3>
-                    <div class="item item-remove-animate item-avatar item-icon-right"
-                         ng-repeat="item in subcategory.items"
-                         type="item-text-wrap">
-                        <img ng-src="{{item.img}}">
-                        <h2 class="item-title">{{item.name}}</h2>
-                        <div class="info-item">
-                            <h4>{{item.description}}</h4>
-                            <p class="around-address">{{item.address}}</p>
-                            <div class="around-links row">
-                                <div class="col">
-                                    <a class="around-website {{ platform == 'android' ? 'button button-small button-positive button-outline' : ''}}"
-                                       href="tel://{{item.phone}}">{{item.phone}}</a>
-                                </div>
-                                <div class="col">
-                                    <a class="around-website {{ platform == 'android' ? 'button button-small button-positive button-outline' : ''}}"
-                                       href="{{item.website}}">{{item.website_name ? item.website_name :
-                                        "Official website"}}</a>
-                                </div>
+                    <div class="item item-padding" ng-repeat="item in subcategory.items" type="item-text-wrap">
+                        <div class="item-remove-animate item-avatar">
+                            <img ng-src="{{item.img}}">
+                            <h2 class="item-title">{{item.name}}</h2>
+                            <div class="info-item">
+                                <h4>{{item.description}}</h4>
+                                <p class="around-address">{{item.address}}</p>
+                                <!--<i class="icon ion-chevron-right icon-accessory"></i>-->
+                                <!--<ion-option-button class="button-calm" ng-click="share(event)">-->
+                                <!--Share-->
+                                <!--</ion-option-button>-->
                             </div>
-                            <!--<i class="icon ion-chevron-right icon-accessory"></i>-->
-                            <!--<ion-option-button class="button-calm" ng-click="share(event)">-->
-                            <!--Share-->
-                            <!--</ion-option-button>-->
+                        </div>
+                        <div class="around-links row">
+                            <div class="col">
+                                <a class="around-phone {{ platform == 'android' ? 'button button-small button-positive button-outline' : ''}}"
+                                   href="tel://{{item.phone}}">{{item.phone}}</a>
+                            </div>
+                            <div class="col">
+                                <a class="around-website {{ platform == 'android' ? 'button button-small button-positive button-outline' : ''}}"
+                                   href="{{item.website}}">{{item.website_name ? item.website_name :
+                                    "Official website"}}</a>
+                            </div>
                         </div>
                     </div>
                 </div>
