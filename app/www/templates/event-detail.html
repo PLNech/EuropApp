@@ -1,15 +1,16 @@
 <ion-view view-title="{{event.name}}">
     <ion-content class="padding">
         <div class="event-detail">
-            <img ng-src="{{event.img}}" style="width: 64px; height: 64px">
-            <h1><i class="icon ion-ios-paper-outline"></i> {{event.name}}</h1>
+            <h1><i class="ion-coffee timelineIcon" ng-if="event.type=='break'"></i>
+                <i class="ion-android-restaurant timelineIcon" ng-if="event.type=='food'"></i>
+                <i class="ion-person-stalker timelineIcon" ng-if="event.type=='roundtable'"></i> {{event.name}}</h1>
             <p><i class="icon ion-calendar"></i>{{event.date | date}}</p>
             <p><i class="icon ion-clock"></i>{{event.time}} | {{event.duration | duration}}</p>
             <p><i class="icon ion-earth"></i>{{event.place}}</p>
             <p>{{event.description}}</p>
             <div ng-if="event.speakers.length > 0">
                 <div class="event-speaker" ng-repeat="speaker in event.speakers">
-                    <img src="{{speaker.img}}"/>
+                    <img src="{{speaker.img}}" />
                     <h3>{{speaker.name}}, {{speaker.title}}</h3>
                     <i ng-if="speaker.category == 'star'" class="ion-star event-badge"></i>
                 </div>
