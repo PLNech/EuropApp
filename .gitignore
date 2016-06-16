@@ -13,7 +13,6 @@ bower_components/
 build/
 *.apk
 app/resources/
-app/config.xml
 
 # OS Files
 *.DS_Store
