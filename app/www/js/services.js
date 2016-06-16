@@ -15,7 +15,7 @@ angular.module('europapp.services', [])
             type: "food",
             speakers: [],
             name: "Lunch Break",
-            description: "Take a break at one of the nearby restaurants.",
+            description: "Take a break at one of the nearby restaurants (see the tab Around Me).",
             place: "Main hall",
             date: "Saturday",
             time: "12:00",
@@ -46,13 +46,14 @@ angular.module('europapp.services', [])
                 title: "First living human clone"
             }],
             name: "Roundtable #1: the future of Biotech",
-            description: "Listen to an expert's debate on actual topics.",
+            description: "Biotechnologies have seen groundbreaking discoveries in the last decade. What should we expect from the next one?.",
             place: "Amphitheater 1",
             date: "Saturday",
             time: "14:00",
             duration: 90
         }, {
             id: 4,
+            type: "break",
             type: "break",
             speakers: [],
             name: "Coffee Break",
@@ -66,7 +67,7 @@ angular.module('europapp.services', [])
             type: "roundtable",
             speakers: [],
             name: "Roundtable #2: CRISPR/Cas9: now what?",
-            description: "Listen to an expert's debate on actual topics.",
+            description: "With CRISPR/Cas9, it is a whole new word that opens to us. What are the limits of our new powers? What ethical concerns do they bring up?",
             place: "Amphitheater 1",
             date: "Saturday",
             time: "16:00",
@@ -99,7 +100,7 @@ angular.module('europapp.services', [])
          */
         var around = [
             {
-                name: "Food", categories: [
+                name: "Restaurants", categories: [
                 {
                     name: "Low Price (<10€)", items: [
                     {
