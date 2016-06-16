@@ -21,6 +21,9 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
 // Include all of Ionic
 @import "www/lib/ionic/scss/ionic";
 
+//include timeline css
+@import "timeline";
+
 $main-blue: #4a87ee;
 $main-dark-blue: #30499f;
 $main-black: #111;
