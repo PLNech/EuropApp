@@ -1,16 +1,22 @@
 <ion-view view-title="Map">
     <ion-content class="padding tab-map" overflow-scroll="true">
-        <h2>Campus Parmentier</h2>
-        <p>All the events will happen in these premises.</p>
-        <ion-scroll zooming="true"
-                    direction="xy"
-                    delegate-handle="zoom-pane"
-                    class="zoom-pane"
-                    min-zoom="1"
-                    scrollbar-x="false"
-                    scrollbar-y="false"
-                    overflow-scroll="false">
-            <img id="map" src="img/map.png" />
-        </ion-scroll>
+        <div class="card">
+            <div class="bar bar-header bar-stable">
+                <h2 class="title">Campus Parmentier</h2>
+            </div>
+            <div class="has-header">
+                <p>All the events will happen in these premises.</p>
+                <ion-scroll zooming="true"
+                            direction="xy"
+                            delegate-handle="zoom-pane"
+                            class="zoom-pane"
+                            min-zoom="1"
+                            scrollbar-x="false"
+                            scrollbar-y="false"
+                            overflow-scroll="false">
+                    <img id="map" src="img/map.png" />
+                </ion-scroll>
+            </div>
+        </div>
     </ion-content>
 </ion-view>

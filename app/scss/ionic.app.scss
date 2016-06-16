@@ -203,6 +203,11 @@ $main-white: #eee;
     font-style: italic;
   }
 
+  .card {
+    padding-top: 50px;
+    position: absolute;
+    height: 95%;
+  }
 
   .zoom-pane {
     width: 100% !important;
@@ -210,7 +215,7 @@ $main-white: #eee;
   }
 
   .zoom-pane .scroll {
-    min-height: 100% !important;
+    min-height: 80% !important;
 
     display: -webkit-box;
     display: -moz-box;
@@ -240,11 +245,12 @@ $main-white: #eee;
     -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center;
+
+    position: relative;
   }
 
   .zoom-pane img {
     width: 100% !important;
-    vertical-align: middle !important;
   }
 
   .image-modal {
