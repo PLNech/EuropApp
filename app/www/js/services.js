@@ -52,7 +52,7 @@ angular.module('europapp.services', [])
             time: "14:00",
             duration: 90
         }, {
-            id: 3,
+            id: 4,
             type: "break",
             speakers: [],
             name: "Coffee Break",
@@ -62,7 +62,7 @@ angular.module('europapp.services', [])
             time: "15:30",
             duration: 30
         }, {
-            id: 4,
+            id: 5,
             type: "roundtable",
             speakers: [],
             name: "Roundtable #2: CRISPR/Cas9: now what?",

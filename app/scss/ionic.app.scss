@@ -59,6 +59,11 @@ $main-white: #eee;
   .event-description {
     color: $main-black;
   }
+
+  .event-date {
+    margin: 0;
+    padding: 0;
+  }
 }
 
 .event-detail {
