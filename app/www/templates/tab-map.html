@@ -1,9 +1,16 @@
 <ion-view view-title="Map">
-    <ion-content class="padding tab-map">
-        <h2>Map</h2>
+    <ion-content class="padding tab-map" overflow-scroll="true">
+        <h2>Campus Parmentier</h2>
         <p>All the events will happen in these premises.</p>
-        <ion-scroll zooming="true" direction="xy">
-            <img src="img/map.png"/>
+        <ion-scroll zooming="true"
+                    direction="xy"
+                    delegate-handle="zoom-pane"
+                    class="zoom-pane"
+                    min-zoom="1"
+                    scrollbar-x="false"
+                    scrollbar-y="false"
+                    overflow-scroll="false">
+            <img id="map" src="img/map.png" />
         </ion-scroll>
     </ion-content>
 </ion-view>
