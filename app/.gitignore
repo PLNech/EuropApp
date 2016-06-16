@@ -4,3 +4,5 @@ plugins/
 
 # Generated css files
 www/css/
+resources/ios/
+resources/android/
