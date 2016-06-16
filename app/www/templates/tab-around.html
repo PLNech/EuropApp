@@ -17,11 +17,11 @@
                             <p class="around-address">{{item.address}}</p>
                             <div class="around-links row">
                                 <div class="col">
-                                    <a class="around-phone button button-small button-positive button-outline"
+                                    <a class="around-website {{ platform == 'android' ? 'button button-small button-positive button-outline' : ''}}"
                                        href="tel://{{item.phone}}">{{item.phone}}</a>
                                 </div>
                                 <div class="col">
-                                    <a class="around-website button button-small button-positive button-outline"
+                                    <a class="around-website {{ platform == 'android' ? 'button button-small button-positive button-outline' : ''}}"
                                        href="{{item.website}}">{{item.website_name ? item.website_name :
                                         "Official website"}}</a>
                                 </div>
