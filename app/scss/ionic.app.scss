@@ -130,11 +130,15 @@ $main-white: #eee;
   }
   .card {
     margin-bottom: 30px;
+    padding-bottom: 10px;
   }
   img.logo {
     width: 150px;
     float: right;
     margin: 0 5px 5px;
+  }
+  .col {
+    min-height: 30px;
   }
   .row {
     margin: 0 0 30px;
@@ -158,6 +162,7 @@ $main-white: #eee;
   }
   .item-content {
     padding-left: 14px;
+    padding-right: 14px;
   }
   .around-phone, .around-website {
     display: inline;

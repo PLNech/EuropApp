@@ -158,7 +158,7 @@ angular.module('europapp.services', [])
                     {
                         img: "img/around/bm.png",
                         name: "B&M Burgers",
-                        description: "Homemade burgers, including vegetarian ones.",
+                        description: "Homemade burgers, some vegetarian.",
                         address: "82 Avenue Parmentier",
                         phone: "0143572611",
                         website: "www.bmburgers.com"
