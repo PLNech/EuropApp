@@ -65,26 +65,22 @@ angular.module('europapp.services', [])
             id: 5,
             type: "roundtable",
             speakers: [{
-                name: "François Képès",
-                img: "img/kepes.jpg",
-                title: "Research Director at CNRS, founding director of the Epigenomics Project and iSSB",
+                name: "Philippe Jais",
+                img: "img/jais.jpg",
+                title: "Chief Executive & Scientific Officer at Eukarÿs SAS",
                 category: "star"
             }, {
-                name: "Héloïse Muller",
-                img: "img/muller.jpg",
-                title: "PHD at Institut Pasteur"
+                name: "Cyrille Pauthenier",
+                img: "img/pauthenier.jpg",
+                title: "President of Abolis Biotechnologies"
             }, {
-                name: "Andy Tolonen",
-                img: "img/tolonen.jpg",
-                title: "Leader of Tolonen group at the Genoscope-CEA"
+                name: "Samuel Juillot",
+                img: "img/juillot.jpg",
+                title: "CSO at Glowee"
             }, {
-                name: "Christophe Genisset",
-                img: "img/genisset.jpg",
-                title: "Security Pfficer at SGDSN (French Secretariat for Defense and National Security)"
-            }, {
-                name: "Alexei Grinbaum",
-                img: "img/grinbaum.jpg",
-                title: "Researcher at LARSIM, the Philosophy of Science Group at CEA-Saclay"
+                name: "Michael Krel",
+                img: "img/krel.png",
+                title: "CEO at Enobraq"
             }],
             name: "Roundtable #2: Synthetic Biology: A new Economic World",
             description: "This conference aims to show the importance of Synthetic Biology in our professional careers.\n" +
