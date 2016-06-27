@@ -1,6 +1,6 @@
 {
   "name": "europapp",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "EuropApp: iGEM 2016 Project Europe companion",
   "dependencies": {
     "gulp": "^3.5.6",
