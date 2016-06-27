@@ -67,6 +67,17 @@ $main-white: #eee;
 }
 
 .event-detail {
+  float: left;
+  box-sizing: border-box;
+  margin: 5px;
+  padding: 10px;
+  border-radius: 2%;
+  border-color: $main-blue;
+  border-style: solid;
+  border-width: 2px;
+
+  $img-margin: 10px;
+
   i {
     margin: 0 5px 0 0;
     color: $main-dark-blue;
@@ -75,6 +86,8 @@ $main-white: #eee;
     width: 50px;
     border: 2px;
     border-radius: 5%;
+    float: left;
+    margin-right: $img-margin;
   }
   h1 {
     margin: 0 0 10px;
@@ -85,19 +98,25 @@ $main-white: #eee;
     font-size: 18px;
   }
   h3 {
-    margin: 18px 0;
     font-size: 14px;
-    float: right;
+    margin: 5px 0;
   }
-  margin: 5px;
-  padding: 10px;
-  border-radius: 2%;
-  border-color: $main-blue;
-  border-style: solid;
-  border-width: 2px;
+  h4 {
+    margin: 5px 0;
+    font-size: 12px;
+    font-weight: normal;
+    font-style: italic;
+  }
 
+  #speaker-info {
+    margin: 0;
+    float: left;
+    width: calc(100% - (50px + #{$img-margin}));
+  }
   .event-speaker {
     border: 2px;
+    width: 100%;
+    min-height: 60px;
   }
 
   .event-badge {

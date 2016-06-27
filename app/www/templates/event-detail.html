@@ -14,8 +14,11 @@
             <div ng-if="event.speakers.length > 0">
                 <div class="event-speaker" ng-repeat="speaker in event.speakers">
                     <img src="{{speaker.img}}" />
-                    <h3>{{speaker.name}}, {{speaker.title}}</h3>
-                    <i ng-if="speaker.category == 'star'" class="ion-star event-badge"></i>
+                    <div id="speaker-info">
+                        <h3>{{speaker.name}}                    <i ng-if="speaker.category == 'star'" class="ion-star event-badge"></i>
+                        </h3>
+                        <h4>{{speaker.title}}</h4>
+                    </div>
                 </div>
             </div>
         </div>

@@ -3,7 +3,6 @@ angular.module('europapp.services', [])
         var events = [{
             id: 1,
             type: "break",
-            speakers: [],
             name: "Exhibition Stand",
             description: "Have a breakfast while discovering all the stands.",
             place: "Main hall",
@@ -13,7 +12,6 @@ angular.module('europapp.services', [])
         }, {
             id: 2,
             type: "food",
-            speakers: [],
             name: "Lunch Break",
             description: "Take a break at one of the nearby restaurants (see the tab Around Me).",
             place: "Main hall",
@@ -24,26 +22,26 @@ angular.module('europapp.services', [])
             id: 3,
             type: "roundtable",
             speakers: [{
-                name: "Randy",
-                img: "img/randy.jpg",
-                title: "iGEM Founder",
+                name: "François Képès",
+                img: "img/kepes.jpg",
+                title: "Research Director at CNRS, founding director of the Epigenomics Project and iSSB",
                 category: "star"
             }, {
-                name: "John Doe",
-                img: "img/ben.png",
-                title: "Bacteria lover"
+                name: "Héloïse Muller",
+                img: "img/muller.jpg",
+                title: "PHD at Institut Pasteur"
             }, {
-                name: "Kevin Stew",
-                img: "img/max.png",
-                title: "Yogurt industry leader"
+                name: "Andy Tolonen",
+                img: "img/tolonen.jpg",
+                title: "Leader of Tolonen group at the Genoscope-CEA"
             }, {
-                name: "Pierre Curie",
-                img: "img/perry.png",
-                title: "Chemist, Nobel prize winner"
+                name: "Christophe Genisset",
+                img: "img/genisset.jpg",
+                title: "Security Pfficer at SGDSN (French Secretariat for Defense and National Security)"
             }, {
-                name: "Adam First",
-                img: "img/adam.jpg",
-                title: "First living human clone"
+                name: "Alexei Grinbaum",
+                img: "img/grinbaum.jpg",
+                title: "Researcher at LARSIM, the Philosophy of Science Group at CEA-Saclay"
             }],
             name: "Roundtable #1: Synthetic Biology: Challenges & Risks",
             description: "This conference aims to explain the purpose of Synthetic Biology.\n" +
@@ -57,7 +55,6 @@ angular.module('europapp.services', [])
         }, {
             id: 4,
             type: "break",
-            speakers: [],
             name: "Coffee Break",
             description: "Take a break before the second roundtable.",
             place: "Amphitheater 1",
@@ -67,7 +64,28 @@ angular.module('europapp.services', [])
         }, {
             id: 5,
             type: "roundtable",
-            speakers: [],
+            speakers: [{
+                name: "François Képès",
+                img: "img/kepes.jpg",
+                title: "Research Director at CNRS, founding director of the Epigenomics Project and iSSB",
+                category: "star"
+            }, {
+                name: "Héloïse Muller",
+                img: "img/muller.jpg",
+                title: "PHD at Institut Pasteur"
+            }, {
+                name: "Andy Tolonen",
+                img: "img/tolonen.jpg",
+                title: "Leader of Tolonen group at the Genoscope-CEA"
+            }, {
+                name: "Christophe Genisset",
+                img: "img/genisset.jpg",
+                title: "Security Pfficer at SGDSN (French Secretariat for Defense and National Security)"
+            }, {
+                name: "Alexei Grinbaum",
+                img: "img/grinbaum.jpg",
+                title: "Researcher at LARSIM, the Philosophy of Science Group at CEA-Saclay"
+            }],
             name: "Roundtable #2: Synthetic Biology: A new Economic World",
             description: "This conference aims to show the importance of Synthetic Biology in our professional careers.\n" +
             " We will look at how much it is attractive and useful to participate to the iGEM competition for our personal development.\n" +
@@ -79,7 +97,6 @@ angular.module('europapp.services', [])
         }, {
             id: 6,
             type: "party",
-            speakers: [],
             name: "Party",
             description: "Let's meet and celebrate together!\n\n" +
             "21h00 | Projection of Germany Euro 2016\n" +
