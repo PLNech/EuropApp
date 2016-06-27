@@ -103,7 +103,10 @@ $main-white: #eee;
   .event-badge {
     font-size: 15px;
   }
+}
 
+.event-description {
+  white-space: pre-wrap;
 }
 
 .tab-home {

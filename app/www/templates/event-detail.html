@@ -3,11 +3,14 @@
         <div class="event-detail">
             <h1><i class="ion-coffee timelineIcon" ng-if="event.type=='break'"></i>
                 <i class="ion-android-restaurant timelineIcon" ng-if="event.type=='food'"></i>
-                <i class="ion-person-stalker timelineIcon" ng-if="event.type=='roundtable'"></i> {{event.name}}</h1>
+                <i class="ion-person-stalker timelineIcon" ng-if="event.type=='roundtable'"></i>
+                <i class="ion-bonfire timelineIcon" ng-if="event.type=='party'"></i>
+                {{event.name}}
+            </h1>
             <p><i class="icon ion-calendar"></i>{{event.date | date}}</p>
             <p><i class="icon ion-clock"></i>{{event.time}} | {{event.duration | duration}}</p>
             <p><i class="icon ion-earth"></i>{{event.place}}</p>
-            <p>{{event.description}}</p>
+            <p class="event-description">{{event.description}}</p>
             <div ng-if="event.speakers.length > 0">
                 <div class="event-speaker" ng-repeat="speaker in event.speakers">
                     <img src="{{speaker.img}}" />
