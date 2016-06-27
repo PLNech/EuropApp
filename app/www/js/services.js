@@ -81,15 +81,15 @@ angular.module('europapp.services', [])
             type: "party",
             speakers: [],
             name: "Party",
-            description: "Let's meet and celebrate together!\n" +
-            "21h00 | Projection  Germany Euro 2016\n" +
+            description: "Let's meet and celebrate together!\n\n" +
+            "21h00 | Projection of Germany Euro 2016\n" +
             "22h00 | Beginning of the party with Dj Swax\n" +
             "23h00 | Show Surprise\n" +
             "00h00-03h00 | Dancing party",
-            place: "24 rue Pasteur 94270 Kremlin-Bicêtre",
+            place: "24 rue Pasteur, Kremlin-Bicêtre",
             date: "Saturday",
             time: "21:00",
-            duration: 420
+            duration: 360
         }];
         return {
             all: function() {
