@@ -4,12 +4,12 @@ angular.module('europapp.services', [])
             id: 1,
             type: "break",
             speakers: [],
-            name: "Welcoming and Exposition",
+            name: "Exhibition Stand",
             description: "Have a breakfast while discovering all the stands.",
             place: "Main hall",
             date: "Saturday",
             time: "09:00",
-            duration: 240
+            duration: 180
         }, {
             id: 2,
             type: "food",
@@ -45,15 +45,17 @@ angular.module('europapp.services', [])
                 img: "img/adam.jpg",
                 title: "First living human clone"
             }],
-            name: "Roundtable #1: the future of Biotech",
-            description: "Biotechnologies have seen groundbreaking discoveries in the last decade. What should we expect from the next one?.",
+            name: "Roundtable #1: Synthetic Biology: Challenges & Risks",
+            description: "This conference aims to explain the purpose of Synthetic Biology.\n" +
+            "Nowadays, it is really important to better understand the challenges of Synthethic Biology. " +
+            "Indeed, it is going to be the future of many fields of expertise.\n" +
+            "Our 5 different speakers will share with us their own expertise and help us to discern the key points of synthetic biology development.",
             place: "Amphitheater 1",
             date: "Saturday",
             time: "14:00",
             duration: 90
         }, {
             id: 4,
-            type: "break",
             type: "break",
             speakers: [],
             name: "Coffee Break",
@@ -66,12 +68,28 @@ angular.module('europapp.services', [])
             id: 5,
             type: "roundtable",
             speakers: [],
-            name: "Roundtable #2: CRISPR/Cas9: now what?",
-            description: "With CRISPR/Cas9, it is a whole new word that opens to us. What are the limits of our new powers? What ethical concerns do they bring up?",
+            name: "Roundtable #2: Synthetic Biology: A new Economic World",
+            description: "This conference aims to show the importance of Synthetic Biology in our professional careers.\n" +
+            " We will look at how much it is attractive and useful to participate to the iGEM competition for our personal development.\n" +
+            "Find out the career opportunities that offers Synthetic Biology field. Our 4 speakers will present us their success stories, and explain why & how Synthetic Biology is essential these days.",
             place: "Amphitheater 1",
             date: "Saturday",
             time: "16:00",
             duration: 90
+        }, {
+            id: 6,
+            type: "party",
+            speakers: [],
+            name: "Party",
+            description: "Let's meet and celebrate together!\n" +
+            "21h00 | Projection  Germany Euro 2016\n" +
+            "22h00 | Beginning of the party with Dj Swax\n" +
+            "23h00 | Show Surprise\n" +
+            "00h00-03h00 | Dancing party",
+            place: "24 rue Pasteur 94270 Kremlin-Bicêtre",
+            date: "Saturday",
+            time: "21:00",
+            duration: 420
         }];
         return {
             all: function() {
