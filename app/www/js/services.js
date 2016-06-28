@@ -44,6 +44,7 @@ angular.module('europapp.services', [])
                 title: "Researcher at LARSIM, the Philosophy of Science Group at CEA-Saclay"
             }],
             name: "Roundtable #1: Synthetic Biology: Challenges & Risks",
+            shortText: "This conference is here to explain the purpose of Synthetic Biology. Nowadays, …",
             description: "This conference is here to explain the purpose of Synthetic Biology.\n" +
             "Nowadays, it is really important to better understand the challenges of Synthethic Biology. " +
             "Indeed, it is going to be the future of many fields of expertise.\n" +
@@ -83,6 +84,7 @@ angular.module('europapp.services', [])
                 title: "CEO at Enobraq"
             }],
             name: "Roundtable #2: Synthetic Biology: A new Economic World",
+            shortText: "This conference aims at showing the importance of Synthetic Biology in our professional careers. We will…",
             description: "This conference aims at showing the importance of Synthetic Biology in our professional careers.\n" +
             "We will look at how much it is attractive and useful to participate to the iGEM competition for our personal career development.\n" +
             "Find out the career opportunities that offers the field of Synthetic Biology. Our 4 speakers will present us their success stories, and explain why & how Synthetic Biology is essential these days.",
@@ -94,6 +96,7 @@ angular.module('europapp.services', [])
             id: 6,
             type: "party",
             name: "Party",
+            shortText: "Let's meet and celebrate together! \nTap here for the detailed timeline.",
             description: "Let's meet and celebrate together!\n\n" +
             "21h00 | Projection of Germany Euro 2016\n" +
             "22h00 | Beginning of the party with Dj Swax\n" +
