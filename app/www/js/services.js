@@ -98,10 +98,10 @@ angular.module('europapp.services', [])
             name: "Party",
             shortText: "Let's meet and celebrate together! \nTap here for the detailed timeline.",
             description: "Let's meet and celebrate together!\n\n" +
-            "21h00 | Projection of Germany Euro 2016\n" +
-            "22h00 | Beginning of the party with Dj Swax\n" +
-            "23h00 | Show Surprise\n" +
-            "00h00-03h00 | Dancing party",
+            "09PM | Projection of Germany Euro 2016\n" +
+            "10PM | Opening of the dancing party with Dj Swax\n" +
+            "11PM | Show Surprise\n" +
+            "03AM | Last dance",
             place: "24 rue Pasteur, Kremlin-Bicêtre",
             date: "Saturday",
             time: "21:00",
