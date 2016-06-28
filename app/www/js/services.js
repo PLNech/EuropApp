@@ -44,10 +44,10 @@ angular.module('europapp.services', [])
                 title: "Researcher at LARSIM, the Philosophy of Science Group at CEA-Saclay"
             }],
             name: "Roundtable #1: Synthetic Biology: Challenges & Risks",
-            description: "This conference aims to explain the purpose of Synthetic Biology.\n" +
+            description: "This conference is here to explain the purpose of Synthetic Biology.\n" +
             "Nowadays, it is really important to better understand the challenges of Synthethic Biology. " +
             "Indeed, it is going to be the future of many fields of expertise.\n" +
-            "Our 5 different speakers will share with us their own expertise and help us to discern the key points of synthetic biology development.",
+            "Our 5 different speakers will share with us their own expertise and help us discern the key points of synthetic biology development.",
             place: "Amphitheater 1",
             date: "Saturday",
             time: "14:00",
@@ -83,9 +83,9 @@ angular.module('europapp.services', [])
                 title: "CEO at Enobraq"
             }],
             name: "Roundtable #2: Synthetic Biology: A new Economic World",
-            description: "This conference aims to show the importance of Synthetic Biology in our professional careers.\n" +
-            " We will look at how much it is attractive and useful to participate to the iGEM competition for our personal development.\n" +
-            "Find out the career opportunities that offers Synthetic Biology field. Our 4 speakers will present us their success stories, and explain why & how Synthetic Biology is essential these days.",
+            description: "This conference aims at showing the importance of Synthetic Biology in our professional careers.\n" +
+            "We will look at how much it is attractive and useful to participate to the iGEM competition for our personal career development.\n" +
+            "Find out the career opportunities that offers the field of Synthetic Biology. Our 4 speakers will present us their success stories, and explain why & how Synthetic Biology is essential these days.",
             place: "Amphitheater 1",
             date: "Saturday",
             time: "16:00",
