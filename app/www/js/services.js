@@ -1,5 +1,5 @@
 angular.module('europapp.services', [])
-    .factory('Events', function() {
+    .factory('Events', function () {
         var events = [{
             id: 1,
             type: "break",
@@ -22,26 +22,70 @@ angular.module('europapp.services', [])
             id: 3,
             type: "roundtable",
             speakers: [{
+                id: 1,
                 name: "François Képès",
                 img: "img/kepes.jpg",
                 title: "Research Director at CNRS, founding director of the Epigenomics Project and iSSB",
-                category: "star"
+                category: "star",
+                bio: "François Képès is a cell, systems and synthetic biologist. He is currently modelling and engineering " +
+                "genome architecture in microorganisms. In 1986 as a postdoc he started the first cell-free assay " +
+                "in the group of Randy Schekman, the 2013 Nobel awardee of Medicine. \n" +
+                "François Képès is a research director at CNRS. He is the founding director of the Epigenomics Project " +
+                "(Genopole, 2002), an institute of complex studies that is dedicated to the emerging disciplines of systems " +
+                "and synthetic biology. He is also the founding director of the institute of Systems and Synthetic Biology (iSSB, 2008). " +
+                "He is an invited Professor at the Department of Bioengineering at Imperial College London. " +
+                "He is a member of the National Academy of Technologies in France. " +
+                "He is the author of over 110 scientific publications and the editor or writer of 20 books. " +
+                "He has organized or chaired each year 3-7 international scientific events. " +
+                "Since 2005, he has been an invited speaker or an organizer for 38 conferences dedicated to synthetic biology. " +
+                "Dr. Képès is the editor of 4 international journals, referee for 19 others, and is an expert advisor " +
+                "for European and North-American funding agencies. In 2007 he was the team leader of the first French iGEM team."
             }, {
+                id: 2,
                 name: "Héloïse Muller",
                 img: "img/muller.jpg",
-                title: "PHD at Institut Pasteur"
+                title: "PHD at Institut Pasteur",
+                bio: "Heloise MULLER, post-doctoral student in biology, currently working in spatial regulation team of genomes " +
+                "in the department of genetics and genomes bioinformatique center, Integrative Biology and Biostatistics at the Institut Pasteur.\n" +
+                "In recent years Heloise MULLER has been distinguished by participating in the project «Synthetic Yeast 2.0» alongside Professor Jef BOEKE.\n" +
+                "She has published «Design and synthesis of neochromosomes» on therapeutic/reproductive medicine, gynecology and endocrinology on October 1, 2015.\n"+
+                "In the Johns Hopkins University, Heloise MULLER and the Sc2.0 team replaced the entire chromosome 3 " +
+                "of the yeast Saccharomyces cerevisiae by a synthetic genome and completely redesigned in silico."
             }, {
-                name: "Andy Tolonen",
+                id: 3,
+                name: "Andrew Tolonen",
                 img: "img/tolonen.jpg",
-                title: "Leader of Tolonen group at the Genoscope-CEA"
+                title: "Leader of Tolonen group at the Genoscope-CEA",
+                bio: "Andy studies the systems biology and genetic engineering of environmentally important microbes. " +
+                "His research focuses on Clostridium phytofermentans, an anaerobic bacterium from forest soil " +
+                "that ferments plant biomass to ethanol and hydrogen. He did his PhD in microbial genomics at MIT and his post-doc " +
+                "in the Church lab at Harvard Medical School.\n" +
+                "Andy also teaches microbiology and molecular biology undergraduate and graduate classes at the Université d'Evry" +
+                " and microbial biotechnology in the Evry-Genopole MSSB program. " +
+                "Andrew Tolonen has been a superadvisor of the Evry iGEM since it was founded in 2012."
             }, {
+                id: 4,
                 name: "Christophe Genisset",
                 img: "img/genisset.jpg",
-                title: "Security Pfficer at SGDSN (French Secretariat for Defense and National Security)"
+                title: "Security Officer at SGDSN (French Secretariat for Defense and National Security)",
+                description: "Christophe GENISSET obtained his Ph.D. in molecular microbiology and biotechnology in 2006 from the University of Provence." +
+                "The subject of his doctoral thesis was “Structure and function study of Helicobacter pylori VacA toxin”. " +
+                "Before his Ph.D. he has obtained an engineer degree in bio-engineering and applied microbiology from the Luminy engineer high school (ESIL) based in Marseille.\n\n" +
+                "Christophe GENISSET has worked in the field of molecular biology and vaccinology in several research departments, " +
+                "in Siena (Chiron Spa), Padova (Università degli studi di Padova) and at the Institut Pasteur of Lille. " +
+                "He has worked on vaccine development against Helicobacter pylori and Mycobacterium tuberculosis.\n\n" +
+                "Between 2007 and 2013, he was a biosafety and a biosecurity inspector working for the ANSM, the French drug agency. " +
+                "He is now working as a biology officer at the SGDSN, the secretariat for defense and national security, " +
+                "a department from the French Prime minister. He is notably in charge of synthetic biology issues."
             }, {
+                id: 5,
                 name: "Alexei Grinbaum",
                 img: "img/grinbaum.jpg",
-                title: "Researcher at LARSIM, the Philosophy of Science Group at CEA-Saclay"
+                title: "Researcher at LARSIM, the Philosophy of Science Group at CEA-Saclay",
+                bio: "Alexei Grinbaum is a physicist and philosopher at LARSIM, the Philosophy of Science Group at CEA-Saclay near Paris. " +
+                "His main interest is in the foundations of quantum theory. He also writes on the ethical and social aspects of emerging technologies, " +
+                "including nanotechnology, robotics, and synthetic biology. He is a member of CERNA, the French ethics committee for research " +
+                "in information technology. His latest book is «Mécanique des Étreintes» (Paris: Encre Marine, 2014)."
             }],
             name: "Roundtable #1: Synthetic Biology: Challenges & Risks",
             shortText: "This conference is here to explain the purpose of Synthetic Biology. Nowadays, …",
@@ -66,22 +110,48 @@ angular.module('europapp.services', [])
             id: 5,
             type: "roundtable",
             speakers: [{
+                id: 1,
                 name: "Philippe Jais",
                 img: "img/jais.jpg",
                 title: "Chief Executive & Scientific Officer at Eukarÿs SAS",
-                category: "star"
+                category: "star",
+                bio: "Philippe Jais, MD, PhD, President and Scientific Director of Eukarÿs has a mixed training: physician and molecular geneticist. " +
+                "As Molecular Geneticist, he completed his Doctorate of Science at INSERM (Paris) and Institut Gustave Roussy (Villejuif, France) " +
+                "with a specialization in molecular genetics of cancer, and the Johns Hopkins (Baltimore, MD) as post-doctoral researcher " +
+                "and finally as Assistant in Molecular and Cellular Biology, Faculty Xavier Bichat (Paris).\n" +
+                "After leaving academia, Philippe Jaïs held various management positions in the Biotechnology Industry (Genset, LFB Biotech, " +
+                "ProteaBio, AzurRx) and Pharmaceuticals (Solvay, Abbott, Roche) in research, translational medicine, and genomic biomarkers.\n" +
+                "In this capacity, he designed and usually managed the early clinical development of five small chemical molecules " +
+                "and three therapeutic proteins. He also invented a large-scale identification of approach to human monogenic diseases " +
+                "treatable by synthetic ligands for nuclear receptors. \nIn 2009, he invented the technology C3P3 and then co-founded Eukarÿs. " +
+                "Having assured the Scientific Director responsibilities until early 2014, it combines this function with the Presidence of the company. " +
+                "Philippe Jaïs has published over fifty articles, book chapters and abstracts, and is the inventor of nearly a dozen patents."
             }, {
+                id: 2,
                 name: "Cyrille Pauthenier",
                 img: "img/pauthenier.jpg",
                 title: "President of Abolis Biotechnologies"
             }, {
+                id: 3,
                 name: "Samuel Juillot",
                 img: "img/juillot.jpg",
-                title: "CSO at Glowee"
+                title: "CSO at Glowee",
+                bio: "With two Masters in biotechnology and synthetic biology obtained SupBiotech and the University of Evry Val d'Essonne, " +
+                "Samuel obtained his PhDin synthetic biology at the University of Freiburg (Germany). " +
+                "He joined Glowee in 2015, where he leads the team of research and development."
             }, {
+                id: 4,
                 name: "Michael Krel",
                 img: "img/krel.png",
-                title: "CEO at Enobraq"
+                title: "CEO at Enobraq",
+                bio: "Michael joined the Life Sciences team as Senior Associate in 2013 and became CEO of Enobraq in nov 2015. " +
+                "Michael focuses on investments in the industrial biotechnology and renewable chemistry sectors.\n" +
+                "Prior to Sofinnova, Michael spent two years as VP Business Development at Deinove, a biotech company " +
+                "developing second generation biofuels and biochemicals. Before that Michael was a Business Development Manager at Metabolic Explorer, " +
+                "a biotech company focused on the development of processes and products in the green chemistry area, where he contributed " +
+                "to the development of projects, particularly in Asia. Previously, Michael helped to develop a consulting company " +
+                "focused on strategic and organizational issues in scientific and technical environments, where he worked with major French energy and materials industrial groups.\n" +
+                "Michael graduated from Ecole Polytechnique and holds a PhD in organic chemistry from the ICSN (Institut de Chimie des Substances Naturelles) in France."
             }],
             name: "Roundtable #2: Synthetic Biology: A new Economic World",
             shortText: "This conference aims at showing the importance of Synthetic Biology in our professional careers. We will…",
@@ -108,13 +178,13 @@ angular.module('europapp.services', [])
             duration: 360
         }];
         return {
-            all: function() {
+            all: function () {
                 return events;
             },
-            remove: function(event) {
+            remove: function (event) {
                 events.splice(events.indexOf(event), 1);
             },
-            get: function(eventId) {
+            get: function (eventId) {
                 for (var i = 0; i < events.length; i++) {
                     if (events[i].id === parseInt(eventId)) {
                         return events[i];
@@ -124,7 +194,7 @@ angular.module('europapp.services', [])
             }
         };
     })
-    .factory('Around', function() {
+    .factory('Around', function () {
         //noinspection SpellCheckingInspection
         /**
          * EAT/DRINK/CULTURE/FUN-TOURISM/TRANSPORTATION
@@ -334,10 +404,10 @@ angular.module('europapp.services', [])
         ];
 
         return {
-            all: function() {
+            all: function () {
                 return around;
             },
-            get: function(aroundName) {
+            get: function (aroundName) {
                 for (var i = 0; i < around.length; i++) {
                     if (around[i].name === aroundName) {
                         return around[i];
@@ -347,7 +417,7 @@ angular.module('europapp.services', [])
             }
         };
     })
-    .factory('Teams', function() {
+    .factory('Teams', function () {
         var teams = [{
             name: "iGEM IONIS Team",
             description: "Composed of 15 members, this team is a multidisciplinary group from 6 different schools " +
@@ -379,13 +449,13 @@ angular.module('europapp.services', [])
             logo: "logo_evry"
         }];
         return {
-            all: function() {
+            all: function () {
                 return teams;
             },
-            remove: function(event) {
+            remove: function (event) {
                 teams.splice(teams.indexOf(event), 1);
             },
-            get: function(eventId) {
+            get: function (eventId) {
                 for (var i = 0; i < teams.length; i++) {
                     if (teams[i].id === parseInt(eventId)) {
                         return teams[i];
@@ -394,5 +464,4 @@ angular.module('europapp.services', [])
                 return null;
             }
         };
-    })
-;
+    });

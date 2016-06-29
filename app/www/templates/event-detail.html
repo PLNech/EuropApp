@@ -12,11 +12,11 @@
             <p><i class="icon ion-earth"></i>{{event.place}}</p>
             <p class="event-description">{{event.description}}</p>
             <div ng-if="event.speakers.length > 0">
-                <div class="event-speaker" ng-repeat="speaker in event.speakers">
+                <div class="event-speaker" ng-repeat="speaker in event.speakers"
+                     ui-sref="tab.speaker-detail({eventId:event.id, speakerId:speaker.id})">
                     <img src="{{speaker.img}}" />
                     <div id="speaker-info">
-                        <h3>{{speaker.name}}                    <i ng-if="speaker.category == 'star'" class="ion-star event-badge"></i>
-                        </h3>
+                        <h3>{{speaker.name}}<i ng-if="speaker.category == 'star'" class="ion-star event-badge"></i>                        </h3>
                         <h4>{{speaker.title}}</h4>
                     </div>
                 </div>

@@ -66,7 +66,7 @@ $main-white: #eee;
   }
 }
 
-.event-detail {
+.event-detail, .speaker-detail {
   float: left;
   box-sizing: border-box;
   margin: 5px;
@@ -122,9 +122,30 @@ $main-white: #eee;
   .event-badge {
     font-size: 15px;
   }
+
+  .ion-star {
+    margin-left: 0.25em;
+  }
 }
 
-.event-description {
+.speaker-detail {
+  width: 98%;
+
+  .speaker-photo {
+    width: 100px;
+  }
+
+  .speaker-basics {
+    margin-bottom: 10px;
+  }
+
+  .speaker-work {
+    margin: 0 0 5px;
+  }
+
+}
+
+.event-description, .speaker-bio {
   white-space: pre-wrap;
 }
 

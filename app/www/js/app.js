@@ -65,6 +65,15 @@ angular.module('europapp', ['ionic',
                     }
                 }
             })
+            .state('tab.speaker-detail', {
+                url: '/events/:eventId/:speakerId',
+                views: {
+                    'tab-events': {
+                        templateUrl: 'templates/speaker-detail.html',
+                        controller: 'SpeakerDetailCtrl'
+                    }
+                }
+            })
             .state('tab.around', {
                 url: '/around',
                 views: {

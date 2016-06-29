@@ -24,6 +24,18 @@ angular.module('europapp.controllers', [])
         $scope.event = Events.get($stateParams.eventId);
     })
 
+    .controller('SpeakerDetailCtrl', function($scope, $stateParams, Events) {
+        $scope.event = Events.get($stateParams.eventId);
+        for (var i = 0; i < $scope.event.speakers.length; i++) {
+            var speaker = $scope.event.speakers[i];
+            console.log("handling speaker " + speaker.name + "...");
+            if (speaker.id == $stateParams.speakerId) {
+                $scope.speaker = speaker;
+                break;
+            }
+        }
+    })
+
     .controller('AroundDetailCtrl', function($scope, $stateParams, Around) {
         $scope.around = Around.get($stateParams.eventId);
     })
