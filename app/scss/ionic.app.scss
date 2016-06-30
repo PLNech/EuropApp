@@ -211,6 +211,9 @@ $main-white: #eee;
       margin: 0 auto;
     }
   }
+
+  .content {
+    padding: 10px 5px;}
 }
 
 .tab-around {
@@ -273,7 +276,7 @@ $main-white: #eee;
   .card {
     position: absolute;
     height: 96%;
-    margin: 0 10px 0 0;
+    margin: 0 10px;
   }
 
   .zoom-pane {
