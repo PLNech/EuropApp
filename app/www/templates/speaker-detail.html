@@ -4,8 +4,7 @@
             <div class="speaker-basics">
                 <img class="speaker-photo" src="{{speaker.img}}" />
                 <h1>{{speaker.name}}<i class="icon ion-star" ng-if="speaker.category=='star'"></i></h1>
-                <p><i class="icon ion-person"></i>{{speaker.name}}</p>
-                <p class="speaker-work"><i class="icon ion-briefcase"></i>{{speaker.title}}</p>
+                <h2 class="speaker-work"><i class="icon ion-briefcase"></i>{{speaker.title}}</h2>
             </div>
             <p class="speaker-bio" ng-if="speaker.bio"><i class="icon ion-edit"></i>{{speaker.bio}}</p>
         </div>
