@@ -213,7 +213,7 @@ $main-white: #eee;
   }
 
   .content {
-    padding: 10px 5px;}
+    padding: 10px 0;}
 }
 
 .tab-around {
@@ -276,7 +276,7 @@ $main-white: #eee;
   .card {
     position: absolute;
     height: 96%;
-    margin: 0 10px;
+    margin: 0;
   }
 
   .zoom-pane {
@@ -353,4 +353,9 @@ $main-white: #eee;
     }
 
   }
+}
+
+.scroll-bar-indicator
+{
+  display: none;
 }
