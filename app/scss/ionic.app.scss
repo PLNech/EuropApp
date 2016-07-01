@@ -54,6 +54,8 @@ $main-white: #eee;
   .event-speaker {
     font-size: 15px;
     color: gray;
+    clear: both;
+    margin-top: 15px;
   }
 
   .event-description {
@@ -88,7 +90,8 @@ $main-white: #eee;
     border: 2px;
     border-radius: 5%;
     float: left;
-    margin-right: $img-margin;
+    clear: both;
+    margin: 0 $img-margin $img-margin 0;
   }
   h1 {
     margin: 0 0 10px;
@@ -211,6 +214,10 @@ $main-white: #eee;
       margin: 0 auto;
     }
   }
+
+  .content {
+    padding: 10px 0;
+  }
 }
 
 .tab-around {
@@ -273,7 +280,7 @@ $main-white: #eee;
   .card {
     position: absolute;
     height: 96%;
-    margin: 0 10px 0 0;
+    margin: 0;
   }
 
   .zoom-pane {
@@ -350,4 +357,8 @@ $main-white: #eee;
     }
 
   }
+}
+
+.scroll-bar-indicator {
+  display: none;
 }
